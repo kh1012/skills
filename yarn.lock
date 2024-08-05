@@ -5506,6 +5506,7 @@ __metadata:
     react-dom: "npm:^18"
     tailwindcss: "npm:^3.4.1"
     test: "workspace:*"
+    test2: "workspace:*"
     typescript: "npm:^5"
   languageName: unknown
   linkType: soft
@@ -12822,7 +12823,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"test2@workspace:packages/test2":
+"test2@workspace:*, test2@workspace:packages/test2":
   version: 0.0.0-use.local
   resolution: "test2@workspace:packages/test2"
   dependencies:
