@@ -1,0 +1,13 @@
+{
+  "name": "skills",
+  "packageManager": "yarn@4.4.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+		"start:docs": "yarn workspace docs dev",
+		"build:test": "yarn workspace test build:watch",
+		"build:test2": "yarn workspace test2 build:watch",
+    "dev": "concurrently \"yarn run start:docs\" \"yarn run build:test\" \"yarn run build:test2\""
+  }
+}
