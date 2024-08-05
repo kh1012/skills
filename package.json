@@ -8,6 +8,7 @@
     "start:docs": "yarn workspace docs dev",
     "build:test": "yarn workspace test build:watch",
     "build:test2": "yarn workspace test2 build:watch",
+		"build": "yarn workspaces foreach --all run build",
     "dev": "concurrently \"yarn run start:docs\" \"yarn run build:test\" \"yarn run build:test2\""
   }
 }
